@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F5F3EE">
+  <title>A Day Like Any Other</title>
+  <meta name="description" content="Five ordinary tasks. One quiet total.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Time-of-day sky behind everything -->
+    <div id="sky" aria-hidden="true"></div>
+    <!-- Hopeful colour wash used only on the solutions screen -->
+    <div id="bleed" aria-hidden="true"></div>
+
+    <svg id="stage" viewBox="110 70 780 840" preserveAspectRatio="xMidYMid meet"
+         xmlns="http://www.w3.org/2000/svg" aria-label="A Day Like Any Other">
+      <defs id="defs"></defs>
+      <g id="world">
+        <g id="scenes"></g>
+        <line id="ground" x1="-4000" y1="780" x2="5000" y2="780" />
+        <g id="props"></g>
+      </g>
+      <g id="actor"></g>
+      <g id="front"></g>
+      <g id="ui"></g>
+      <g id="fx"></g>
+    </svg>
+
+    <div id="clock" aria-hidden="true"><span class="i"></span><span class="t"></span></div>
+
+    <section id="reveal" hidden>
+      <p class="rv-quote" aria-live="polite"></p>
+      <p class="rv-head">× 365</p>
+      <ol class="rv-grid"></ol>
+      <p class="rv-end" data-i18n="startAgain">Start Again</p>
+      <div class="rv-actions">
+        <button class="rv-btn rv-next" type="button" aria-label="Continue">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 24h20M26 15l9 9-9 9"/></svg>
+        </button>
+        <button class="rv-btn rv-replay" type="button" aria-label="Play again">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M34.5 17A12 12 0 1 0 36 26"/><path d="M36 10v8h-8"/></svg>
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/Draggable.min.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/kit.js"></script>
+  <script src="js/character.js"></script>
+  <script src="js/levels.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

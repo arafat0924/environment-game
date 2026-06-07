@@ -1,0 +1,3 @@
+Bundled fonts (both SIL Open Font License 1.1):
+- SolaimanLipi (Bengali) by Ekushey - licence text embedded in the font files.
+- Ma Shan Zheng (Chinese), subset to the characters this game uses - see OFL-MaShanZheng.txt.
